@@ -28,6 +28,9 @@
 		"anchor": true,
 		"ariaLabel": true,
 		"html": false,
+		"background": {
+			"backgroundImage": true
+		},
 		"color": {
 			"gradients": true,
 			"heading": true,
@@ -61,9 +64,6 @@
 				"style": true,
 				"width": true
 			}
-		},
-		"media": {
-			"backgroundImage": true
 		},
 		"position": {
 			"sticky": true
