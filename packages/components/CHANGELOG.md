@@ -15,6 +15,7 @@
 
 ### Internal
 
+-   `ToggleGroupControl`: Rewrite backdrop animation using framer motion shared layout animations, add better support for controlled and uncontrolled modes ([#50278](https://github.com/WordPress/gutenberg/pull/50278)).
 -   `Shortcut`: Add Storybook stories ([#53627](https://github.com/WordPress/gutenberg/pull/53627)).
 -   `SlotFill`: Do not render children when using `<Slot bubblesVirtually />`. ([#53272](https://github.com/WordPress/gutenberg/pull/53272))
 
@@ -112,7 +113,6 @@
 
 -   `ClipboardButton`: Convert to TypeScript ([#51334](https://github.com/WordPress/gutenberg/pull/51334)).
 -   `Toolbar`: Replace `reakit` dependency with `@ariakit/react` ([#51623](https://github.com/WordPress/gutenberg/pull/51623)).
--   `ToggleGroupControl`: Rewrite backdrop animation using framer motion shared layout animations ([#50278](https://github.com/WordPress/gutenberg/pull/50278)).
 
 ### Documentation
 
