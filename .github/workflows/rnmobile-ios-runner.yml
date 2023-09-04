@@ -49,9 +49,6 @@ jobs:
                       packages/react-native-editor/ios/vendor
                   key: ${{ runner.os }}-pods-${{ hashFiles('packages/react-native-editor/ios/Gemfile.lock') }}-${{ hashFiles('packages/react-native-editor/ios/Podfile.lock') }}-${{ hashFiles('package-lock.json') }}
 
-            - name: Bundle iOS
-              run: npm run native test:e2e:bundle:ios
-
             - name: Switch Xcode version to ${{ matrix.xcode }}
               run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app
 
