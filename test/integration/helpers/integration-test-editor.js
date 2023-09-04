@@ -9,11 +9,10 @@ import userEvent from '@testing-library/user-event';
  */
 import { useState, useEffect } from '@wordpress/element';
 import {
+	BlockCanvas,
 	BlockEditorProvider,
-	BlockList,
 	BlockTools,
 	BlockInspector,
-	WritingFlow,
 } from '@wordpress/block-editor';
 import { registerCoreBlocks } from '@wordpress/block-library';
 import { ShortcutProvider } from '@wordpress/keyboard-shortcuts';
@@ -75,9 +74,7 @@ export function Editor( { testBlocks, settings = {} } ) {
 			>
 				<BlockInspector />
 				<BlockTools>
-					<WritingFlow>
-						<BlockList />
-					</WritingFlow>
+					<BlockCanvas shouldIframe={ false } />
 				</BlockTools>
 			</BlockEditorProvider>
 		</ShortcutProvider>
