@@ -21,7 +21,7 @@ exports.iosLocal = ( { iPadDevice = false } ) => ( {
 
 exports.iosServer = ( { iPadDevice = false } ) => ( {
 	...ios,
-	platformVersion: '15.4', // Supported Sauce Labs platforms can be found here: https://saucelabs.com/rest/v1/info/platforms/appium
+	platformVersion: '15.5', // Supported Sauce Labs platforms can be found here: https://saucelabs.com/rest/v1/info/platforms/appium
 	deviceName: ! iPadDevice
 		? 'iPhone 13 Simulator'
 		: 'iPad Pro (9.7 inch) Simulator',
